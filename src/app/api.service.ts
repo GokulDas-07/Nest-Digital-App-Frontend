@@ -20,4 +20,8 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/delete",dataToSend)
   }
+  viewAllEmployees=()=>
+  {
+    return this.http.get("http://localhost:8080/viewemployees")
+  }
 }
